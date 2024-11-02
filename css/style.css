@@ -61,6 +61,42 @@ h1, h2 {
     text-shadow: 2px 2px 10px rgba(255, 255, 0, 0.7); /* Glow effect */
 }
 
+.feature-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature-item {
+    background-color: #222; /* Darker background for feature items */
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(30% - 40px); /* Responsive width for three columns */
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.feature-item h3 {
+    color: #00FFFF; /* Neon Cyan for subheadings */
+    margin-bottom: 10px;
+}
+
+.feature-item p, .feature-item ul {
+    color: #e1e1e1; /* Light text for readability */
+    margin: 10px 0; /* Spacing for paragraphs and lists */
+}
+
+.feature-item ul {
+    list-style-type: disc; /* Bullet points for lists */
+    padding-left: 20px; /* Indentation for list items */
+}
+
 /* Hero Section */
 .hero {
     background: url('https://via.placeholder.com/800x400') no-repeat center center/cover;
