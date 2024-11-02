@@ -1,0 +1,86 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #ddd;
+    background-color: #1a1a1a;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav .btn {
+    background: #e63946;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #222;
+    margin-bottom: 10px;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/800x400') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #e63946;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features, .feature-list, .benefits, .testimonials, .cta, .newsletter, .team, footer {
+    background-color: #292929;
+    margin-top: 20px;
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social a {
+    color: #e63946;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .features, .feature-list, .benefits, .testimonials, .cta, .newsletter, .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
