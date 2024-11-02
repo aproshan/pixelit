@@ -9,15 +9,17 @@
 body {
     font-family: 'Press Start 2P', Arial, sans-serif; /* Pixel/retro gaming font */
     line-height: 1.6;
-    color: #ddd;
-    background-color: #0d0d0d; /* Darker background for contrast */
-} 
+    color: #e1e1e1; /* Lighter text for readability */
+    background-color: #0b0b0b; /* Darker background for contrast */
+    background-image: url('https://via.placeholder.com/1920x1080/0d0d0d/000000?text='); /* Example background image */
+}
+
 /* Header and Navigation */
 header {
-    background: linear-gradient(135deg, #1a1a1a, #333);
+    background: linear-gradient(135deg, #1a1a1a, #444);
     padding: 1rem;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 255, 255, 0.3); /* Neon shadow */
+    box-shadow: 0px 8px 16px rgba(0, 255, 255, 0.5); /* Enhanced neon shadow */
 }
 
 header nav {
@@ -29,31 +31,34 @@ header nav {
 
 header nav a {
     color: #0ff;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-size: 1.3rem; /* Slightly larger text */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 header nav a:hover {
     color: #f39c12; /* Neon orange on hover */
+    transform: scale(1.1); /* Scale effect on hover */
 }
 
 header nav .btn {
     background: #e63946;
-    padding: 8px 12px;
+    padding: 10px 15px;
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 header nav .btn:hover {
     background: #f39c12; /* Neon orange on hover */
+    transform: scale(1.1);
 }
 
 h1, h2 {
     color: #0ff; /* Neon cyan for headers */
+    text-shadow: 2px 2px 10px rgba(255, 255, 0, 0.7); /* Glow effect */
 }
 
 /* Hero Section */
@@ -61,25 +66,26 @@ h1, h2 {
     background: url('https://via.placeholder.com/800x400') no-repeat center center/cover;
     color: #fff;
     padding: 100px 20px;
-    text-shadow: 2px 2px 8px rgba(0, 255, 255, 0.7); /* Neon shadow */
+    text-shadow: 2px 2px 12px rgba(0, 255, 255, 0.9); /* Enhanced neon shadow */
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px; /* Increased padding for buttons */
     margin: 10px;
     background: #e63946;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     border: 2px solid #f39c12; /* Neon orange border */
-    transition: background 0.3s ease, border-color 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background: #f39c12; /* Neon orange on hover */
     border-color: #e63946;
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
 /* Sections */
@@ -89,13 +95,14 @@ section {
     background-color: #111; /* Slightly darker section background */
     border: 1px solid #333; /* Border to define sections */
     margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
 }
 
 /* About Us & Contact Sections */
 .about, .contact {
     background: #1a1a1a;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #0ff;
 }
 
@@ -109,14 +116,14 @@ section {
 .team-member img {
     border-radius: 50%;
     margin-right: 15px;
-    border: 2px solid #0ff;
+    border: 3px solid #0ff; /* Thicker border */
 }
 
 /* Portfolio, Blog, and Post Sections */
 .portfolio, .blog, .post {
     background: #1a1a1a;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #f39c12;
 }
 
@@ -129,7 +136,7 @@ form label {
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px; /* Increased padding for inputs */
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #555;
@@ -139,16 +146,17 @@ form input, form textarea {
 
 button {
     margin-top: 10px;
-    padding: 10px 15px;
+    padding: 12px 18px; /* Increased padding */
     background-color: #f39c12;
     border: none;
     color: #fff;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
     background-color: #ff6600; /* Brighter neon on hover */
+    transform: scale(1.05);
 }
 
 .scroll-top {
@@ -162,12 +170,17 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .scroll-top.visible {
     display: block;
 }
 
+.scroll-top:hover {
+    background: #ff4500; /* Slightly darker on hover */
+    transform: scale(1.1);
+}
 
 /* Other Sections */
 .features, .feature-list, .benefits, .testimonials, .cta, .newsletter, .team, footer {
@@ -175,6 +188,7 @@ button:hover {
     margin-top: 20px;
     padding: 40px 20px;
     border: 1px solid #333;
+    border-radius: 10px; /* Rounded corners */
 }
 
 /* Footer */
@@ -190,11 +204,12 @@ footer .social a {
     color: #0ff;
     text-decoration: none;
     margin: 0 5px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 footer .social a:hover {
     color: #f39c12; /* Neon orange on hover */
+    transform: scale(1.1); /* Scale effect on hover */
 }
 
 /* Responsive */
@@ -205,3 +220,4 @@ footer .social a:hover {
         align-items: center;
     }
 }
+
