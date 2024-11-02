@@ -24,14 +24,15 @@ header {
 
 header nav {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center align items */
+    padding: 10px; /* Reduced padding */
     color: #00FFFF; /* Neon Cyan text */
 }
 
 header nav a {
     color: #00FFFF;
-    margin: 0 15px;
+    margin: 0 5px; /* Reduced margin for links */
     text-decoration: none;
     font-size: 1.3rem; /* Slightly larger text */
     transition: color 0.3s ease, transform 0.3s ease;
@@ -65,7 +66,7 @@ h1, h2 {
 .hero {
     background: url('https://via.placeholder.com/800x400') no-repeat center center/cover;
     color: #fff;
-    padding: 100px 20px;
+    padding: 50px 20px; /* Adjusted padding for mobile */
     text-shadow: 2px 2px 12px rgba(0, 255, 255, 0.9); /* Enhanced neon shadow */
 }
 
@@ -90,7 +91,7 @@ h1, h2 {
 
 /* Sections */
 section {
-    padding: 40px 20px;
+    padding: 20px; /* Reduced padding for mobile */
     text-align: center;
     background-color: #111; /* Slightly darker section background */
     border: 1px solid #333; /* Border to define sections */
@@ -111,11 +112,12 @@ section {
     margin: 20px 0;
     display: flex;
     align-items: center;
+    flex-direction: column; /* Stack team members vertically */
 }
 
 .team-member img {
     border-radius: 50%;
-    margin-right: 15px;
+    margin-bottom: 15px; /* Space below images */
     border: 3px solid #00FFFF; /* Neon Cyan */
 }
 
@@ -135,7 +137,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 100%;
+    width: calc(100% - 20px); /* Full width minus padding */
     padding: 12px; /* Increased padding for inputs */
     margin-top: 5px;
     border-radius: 5px;
@@ -186,7 +188,7 @@ button:hover {
 .features, .feature-list, .benefits, .testimonials, .cta, .newsletter, .team, footer {
     background-color: #1a1a1a;
     margin-top: 20px;
-    padding: 40px 20px;
+    padding: 20px; /* Reduced padding for mobile */
     border: 1px solid #333;
     border-radius: 10px; /* Rounded corners */
 }
@@ -213,58 +215,29 @@ footer .social a:hover {
 }
 
 /* Responsive Styles */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     header nav {
-        flex-direction: column; /* Stack nav items on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
-}
-
-@media (max-width: 992px) {
-    header nav {
-        font-size: 1.1rem; /* Slightly smaller font for nav */
-    }
-
+    
     .hero {
-        padding: 80px 10px; /* Reduced padding */
+        padding: 40px 10px; /* Reduced padding for mobile */
     }
 
     section {
-        padding: 30px 10px; /* Reduced padding for sections */
-    }
-
-    h1, h2 {
-        font-size: 1.5rem; /* Smaller font size for headers */
-    }
-}
-
-@media (max-width: 768px) {
-    .btn {
-        width: 100%; /* Full width for buttons on smaller devices */
-    }
-
-    .team-member {
-        flex-direction: column; /* Stack team members vertically */
-        align-items: center; /* Center align images and text */
+        padding: 20px 10px; /* Further reduced padding for mobile */
     }
 
     form input, form textarea {
-        font-size: 0.9rem; /* Smaller font size for inputs */
+        width: calc(100% - 20px); /* Full width minus padding */
+    }
+
+    .team-member {
+        flex-direction: column; /* Stack vertically for smaller devices */
+        align-items: center; /* Center items */
     }
 }
 
-@media (max-width: 576px) {
-    h1, h2 {
-        font-size: 1.2rem; /* Even smaller for very small devices */
-    }
-
-    header nav a {
-        font-size: 1rem; /* Smaller font for links */
-    }
-
-    button {
-        padding: 10px 15px; /* Adjusted padding for buttons */
-    }
-}
 
 
 
