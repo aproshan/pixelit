@@ -152,6 +152,24 @@ button:hover {
     background-color: #ff6600; /* Brighter neon on hover */
 }
 
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px;
+    background: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll-top.visible {
+    display: block;
+}
+
+
 /* Other Sections */
 .features, .feature-list, .benefits, .testimonials, .cta, .newsletter, .team, footer {
     background-color: #1a1a1a;
