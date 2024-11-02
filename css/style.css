@@ -26,11 +26,11 @@ header nav {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    color: #0ff; /* Neon cyan text */
+    color: #00FFFF; /* Neon Cyan text */
 }
 
 header nav a {
-    color: #0ff;
+    color: #00FFFF;
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.3rem; /* Slightly larger text */
@@ -38,12 +38,12 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #f39c12; /* Neon orange on hover */
+    color: #FFA500; /* Vibrant Orange on hover */
     transform: scale(1.1); /* Scale effect on hover */
 }
 
 header nav .btn {
-    background: #e63946;
+    background: #FF00FF; /* Bright Magenta */
     padding: 10px 15px;
     border-radius: 5px;
     color: white;
@@ -52,12 +52,12 @@ header nav .btn {
 }
 
 header nav .btn:hover {
-    background: #f39c12; /* Neon orange on hover */
+    background: #FFA500; /* Vibrant Orange on hover */
     transform: scale(1.1);
 }
 
 h1, h2 {
-    color: #0ff; /* Neon cyan for headers */
+    color: #00FFFF; /* Neon Cyan for headers */
     text-shadow: 2px 2px 10px rgba(255, 255, 0, 0.7); /* Glow effect */
 }
 
@@ -74,17 +74,17 @@ h1, h2 {
     display: inline-block;
     padding: 12px 25px; /* Increased padding for buttons */
     margin: 10px;
-    background: #e63946;
+    background: #FF00FF; /* Bright Magenta */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    border: 2px solid #f39c12; /* Neon orange border */
+    border: 2px solid #FFA500; /* Vibrant Orange border */
     transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-    background: #f39c12; /* Neon orange on hover */
-    border-color: #e63946;
+    background: #FFA500; /* Vibrant Orange on hover */
+    border-color: #FF00FF;
     transform: scale(1.05); /* Scale effect on hover */
 }
 
@@ -103,7 +103,7 @@ section {
     background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #0ff;
+    border: 1px solid #00FFFF; /* Neon Cyan */
 }
 
 /* Team Section */
@@ -116,7 +116,7 @@ section {
 .team-member img {
     border-radius: 50%;
     margin-right: 15px;
-    border: 3px solid #0ff; /* Thicker border */
+    border: 3px solid #00FFFF; /* Neon Cyan */
 }
 
 /* Portfolio, Blog, and Post Sections */
@@ -124,14 +124,14 @@ section {
     background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #f39c12;
+    border: 1px solid #FFA500; /* Vibrant Orange */
 }
 
 /* Form Styling */
 form label {
     display: block;
     margin-top: 10px;
-    color: #f39c12;
+    color: #FFA500; /* Vibrant Orange */
 }
 
 form input, form textarea {
@@ -147,7 +147,7 @@ form input, form textarea {
 button {
     margin-top: 10px;
     padding: 12px 18px; /* Increased padding */
-    background-color: #f39c12;
+    background-color: #FFA500; /* Vibrant Orange */
     border: none;
     color: #fff;
     cursor: pointer;
@@ -155,7 +155,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff6600; /* Brighter neon on hover */
+    background-color: #FF4500; /* Slightly brighter orange on hover */
     transform: scale(1.05);
 }
 
@@ -165,7 +165,7 @@ button:hover {
     right: 20px;
     display: none;
     padding: 10px;
-    background: #f90;
+    background: #FFD700; /* Metallic Gold */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -178,7 +178,7 @@ button:hover {
 }
 
 .scroll-top:hover {
-    background: #ff4500; /* Slightly darker on hover */
+    background: #FFC300; /* Lighter Gold on hover */
     transform: scale(1.1);
 }
 
@@ -201,14 +201,14 @@ footer {
 }
 
 footer .social a {
-    color: #0ff;
+    color: #00FFFF; /* Neon Cyan */
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 footer .social a:hover {
-    color: #f39c12; /* Neon orange on hover */
+    color: #FFA500; /* Vibrant Orange on hover */
     transform: scale(1.1); /* Scale effect on hover */
 }
 
@@ -220,4 +220,5 @@ footer .social a:hover {
         align-items: center;
     }
 }
+
 
