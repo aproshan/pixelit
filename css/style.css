@@ -100,15 +100,16 @@ h1, h2 {
 
 .feature-details {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
     gap: 20px;
 }
 
 .feature-item {
+    width: 100%; /* Take full width of the container */
+    max-width: 500px; /* Optional: limit maximum width */
     background: #333;
     padding: 15px;
-    width: calc(30% - 40px);
     border-radius: 10px;
     border: 1px solid var(--highlight-color);
     text-align: center;
