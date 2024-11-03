@@ -120,10 +120,12 @@ h1, h2 {
 }
 
 .feature-item img {
-    max-width: 100%;
+    max-width: 60%; /* Adjusted to 80% for a smaller image size */
+    height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 
 /* Buttons */
 .btn {
