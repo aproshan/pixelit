@@ -121,6 +121,19 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
+.game-section {
+        margin-bottom: 30px;
+    }
+    .game-icons {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around; /* Space out icons evenly */
+        flex-wrap: wrap; /* Allow wrapping to new lines */
+    }
+    .game-icon {
+        width: 100px; /* Adjust size as needed */
+        height: auto;
+    }
 
 /* Buttons */
 .btn {
