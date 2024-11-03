@@ -119,7 +119,7 @@ h1, h2 {
     transform: translateY(-5px);
 }
 
-.feature-item img {
+.features img {
     max-width: 60%; /* Adjusted to 80% for a smaller image size */
     height: auto;
     border-radius: 8px;
